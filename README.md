@@ -22,7 +22,12 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config checkout
 ```
 
-To store old config files out of the way
+Hide unadded files for clarity
+```
+config config --local status.showUntrackedFiles no
+```
+
+To store possible old config files out of the way
 ```
 mkdir -p .config-backup && \
 config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
