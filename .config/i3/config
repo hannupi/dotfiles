@@ -44,9 +44,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Xinput to enable laptop trackpad clicking, check your version with
+# xinput list command and get the correct one
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+
 # start a terminal
 bindsym $mod+Return exec alacritty 
-exec alacritty 
+exec --no-startup-id alacritty 
 
 # screenshot with flameshot
 bindsym $mod+shift+s exec flameshot gui
