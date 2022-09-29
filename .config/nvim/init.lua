@@ -4,4 +4,4 @@ vim.g.localleader = "\\"
 require('vars')
 require('opts')      
 require('keys')      
---require('plug')      
+require('plug')      

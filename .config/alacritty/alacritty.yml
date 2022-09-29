@@ -78,7 +78,7 @@ colors:
     # Default colors
     primary:
         foreground: "0xabb2bf"
-        background: "#212121"
+        background: "#111111"
 
     # Cursor colors
     cursor:
