@@ -1,5 +1,4 @@
--- space as leader key
-vim.g.mapleader = " "
+vim.g.mapleader = " "   -- space as leader key
 vim.g.localleader = "\\"
 
 require('vars')
@@ -7,11 +6,11 @@ require('opts')
 require('keys')      
 require('plug')      
 
--- add installed plugins here for checking
-require('nvim-tree').setup{}
-require('lualine').setup {
-    options = {
-        theme = 'dracula-nvim'
-    }
-}
-require('nvim-autopairs').setup{}
+-- plugins, configs live in their own files 
+require 'pluginconfigs.nvim-tree'
+require 'pluginconfigs.barbar'
+require 'pluginconfigs.lualine'
+require 'pluginconfigs.toggleterm'
+require 'pluginconfigs.nvim-autopairs'
+require 'pluginconfigs.colorscheme' 
+
