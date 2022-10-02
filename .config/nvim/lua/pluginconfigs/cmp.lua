@@ -1,4 +1,10 @@
 local completeopt=menu,menuone,noselect
+
+local has_words_before = function()
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+end
+
 local cmp = require'cmp'
   cmp.setup({
     snippet = {
@@ -21,8 +27,8 @@ local cmp = require'cmp'
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
       { name = 'luasnip' }, -- For luasnip users.
-    }, {
       { name = 'buffer' },
+      { name = 'path' },
     })
   })
 
@@ -55,8 +61,13 @@ local cmp = require'cmp'
 
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   require('lspconfig').pyright.setup {
     capabilities = capabilities
   }
-  require('lspconfig').tsserver.setup {}
+  require('lspconfig').tsserver.setup {
+    capabilities = capabilities
+  }
+  require('lspconfig').sumneko_lua.setup {
+    capabilities = capabilities
+  }
+  require('lspconfig').tailwindcss.setup {}

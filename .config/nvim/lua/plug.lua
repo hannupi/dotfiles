@@ -24,6 +24,7 @@ return packer.startup(function(use)
     use { 'MunifTanjim/prettier.nvim' } -- formatter
     use { 'L3MON4D3/LuaSnip', requires = 'saadparwaiz1/cmp_luasnip' } -- code snippets
     use { 'williamboman/mason.nvim' }
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- syntax highlighting
 
     -- git
     use { 'tpope/vim-fugitive' }
