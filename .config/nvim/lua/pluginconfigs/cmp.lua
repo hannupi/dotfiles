@@ -1,28 +1,37 @@
-local completeopt=menu,menuone,noselect
-
-local has_words_before = function()
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-end
-
+local completeopt = menu,menuone,noselect
+local luasnip = require 'luasnip'
 local cmp = require'cmp'
+local lsp = require('lspconfig')
+
   cmp.setup({
     snippet = {
-      -- REQUIRED - you must specify a snippet engine
       expand = function(args)
         require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
       end,
     },
-    window = {
-      -- completion = cmp.config.window.bordered(),
-      -- documentation = cmp.config.window.bordered(),
-    },
     mapping = cmp.mapping.preset.insert({
       ['<C-b>'] = cmp.mapping.scroll_docs(-4),
       ['<C-f>'] = cmp.mapping.scroll_docs(4),
+      ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items
       ['<C-Space>'] = cmp.mapping.complete(),
-      ['<C-e>'] = cmp.mapping.abort(),
-      ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+      ['<Tab>'] = function(fallback)
+        if cmp.visible() then
+            cmp.select_next_item()
+        elseif luasnip.expand_or_jumpable() then
+            luasnip.expand_or_jump()
+        else
+            fallback()
+        end
+      end,
+        ['<S-Tab>'] = function(fallback)
+            if cmp.visible() then
+                cmp.select_prev_item()
+            elseif luasnip.jumpable(-1) then
+                luasnip.jump(-1)
+            else
+                fallback()
+            end
+        end
     }),
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
@@ -61,13 +70,16 @@ local cmp = require'cmp'
 
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  require('lspconfig').pyright.setup {
+  lsp.pyright.setup {
     capabilities = capabilities
   }
-  require('lspconfig').tsserver.setup {
+  lsp.tsserver.setup {
+    capabilities = capabilities,
+  }
+  lsp.sumneko_lua.setup {
     capabilities = capabilities
   }
-  require('lspconfig').sumneko_lua.setup {
+  lsp.tailwindcss.setup {}
+  lsp.yamlls.setup {
     capabilities = capabilities
   }
-  require('lspconfig').tailwindcss.setup {}

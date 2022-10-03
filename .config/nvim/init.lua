@@ -19,5 +19,6 @@ require 'pluginconfigs.colorscheme'
 require 'pluginconfigs.cmp'
 require 'pluginconfigs.treesitter'
 require 'pluginconfigs.lsp'
+require('luasnip.loaders.from_vscode').lazy_load()
 require 'pluginconfigs.mason'
 

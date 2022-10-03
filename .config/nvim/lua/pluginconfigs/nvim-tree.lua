@@ -1,6 +1,6 @@
 require('nvim-tree').setup{
-    -- uncomment to have floating instead of buffer on left
-    --[[view = {
+    --[[ uncomment to have floating instead of buffer 
+    view = {
         float = {
             enable = true,
             open_win_config = {
@@ -12,7 +12,9 @@ require('nvim-tree').setup{
                 col = 1,
             },
         }
-    },]]--
+    },
+    ]]--
+
     actions = {
 	    open_file = {
             quit_on_open = true
