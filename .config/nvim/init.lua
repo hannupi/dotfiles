@@ -15,10 +15,12 @@ require 'pluginconfigs.toggleterm'
 require 'pluginconfigs.nvim-autopairs'
 require 'pluginconfigs.colorscheme'
 
--- languages
+-- language improvements
 require 'pluginconfigs.cmp'
 require 'pluginconfigs.treesitter'
 require 'pluginconfigs.lsp'
 require('luasnip.loaders.from_vscode').lazy_load()
 require 'pluginconfigs.mason'
+require 'pluginconfigs.null-ls'
+
 

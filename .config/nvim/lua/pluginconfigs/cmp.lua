@@ -1,7 +1,6 @@
 local completeopt = menu,menuone,noselect
 local luasnip = require 'luasnip'
 local cmp = require'cmp'
-local lsp = require('lspconfig')
 
   cmp.setup({
     snippet = {
@@ -68,18 +67,27 @@ local lsp = require('lspconfig')
     })
   })
 
-  -- Set up lspconfig.
+  local lsp = require('lspconfig')
+  -- Set up lspconfig. capabilities needed for autofill popups 
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
   lsp.pyright.setup {
     capabilities = capabilities
   }
   lsp.tsserver.setup {
+    filetype = { 'typescript', 'typescriptreact', 'typescript.tsx' },
+    cmd = { 'typescript-language-server', '--stdio' },
     capabilities = capabilities,
   }
   lsp.sumneko_lua.setup {
     capabilities = capabilities
   }
-  lsp.tailwindcss.setup {}
+  lsp.tailwindcss.setup {
+    capabilities = capabilities,
+  }
   lsp.yamlls.setup {
+    capabilities = capabilities
+  }
+  lsp.html.setup {
     capabilities = capabilities
   }

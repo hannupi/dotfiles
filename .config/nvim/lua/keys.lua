@@ -5,6 +5,7 @@ map('n', '<leader>f', [[:Telescope find_files<CR>]], {})
 
 
 -- save file vscode keybind ctrl + s
+--map('n', '<C-S>', [[:lua vim.lsp.buf.formatting()<CR>]], {})
 map('n', '<C-S>', [[:update<cr>]], {})
 map('n', '<S-S>', [[:x<cr>]], {})
 

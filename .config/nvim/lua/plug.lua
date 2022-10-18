@@ -15,16 +15,18 @@ return packer.startup(function(use)
     use { 'romgrk/barbar.nvim', requires = 'kyazdani42/nvim-web-devicons'} -- file tabs
 
     -- language stuff 
-    use { 'neovim/nvim-lspconfig' }
+    use { 'neovim/nvim-lspconfig' } -- lsp handler
     use { 'hrsh7th/cmp-nvim-lsp' }
     use { 'hrsh7th/cmp-buffer' }
     use { 'hrsh7th/cmp-path' }
     use { 'hrsh7th/cmp-cmdline' }
-    use { 'hrsh7th/nvim-cmp' }
+    use { 'hrsh7th/nvim-cmp' } -- autocomplete
     use { 'MunifTanjim/prettier.nvim' } -- formatter
     use { 'L3MON4D3/LuaSnip', requires = 'saadparwaiz1/cmp_luasnip' } -- code snippets
-    use { 'williamboman/mason.nvim' }
+    use { 'williamboman/mason.nvim' } -- lsp server downloader
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- syntax highlighting
+    use { 'jose-elias-alvarez/null-ls.nvim' } -- inject diagnostics etc
+    use { 'MunifTnajim/prettier.nvim' } -- code formatter
 
     -- git
     use { 'tpope/vim-fugitive' }
@@ -32,7 +34,7 @@ return packer.startup(function(use)
 
     -- UI stuff
     use { 'mhinz/vim-startify' } -- front page 
-    use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }} 
+    use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
     use { 'DanilaMihailov/beacon.nvim' } -- show effect where cursor goes
     use { 'navarasu/onedark.nvim' } -- theme
 

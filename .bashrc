@@ -26,3 +26,4 @@ fi
 
 unset rc
 alias config='/usr/bin/git --git-dir=/home/dft/dotfiles --work-tree=/home/dft'
+. "$HOME/.cargo/env"
