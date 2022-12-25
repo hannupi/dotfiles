@@ -21,6 +21,6 @@ require 'pluginconfigs.treesitter'
 require 'pluginconfigs.lsp'
 require('luasnip.loaders.from_vscode').lazy_load()
 require 'pluginconfigs.mason'
-require 'pluginconfigs.null-ls'
+--require 'pluginconfigs.null-ls'
 
 
