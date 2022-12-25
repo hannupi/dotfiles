@@ -36,7 +36,8 @@ return packer.startup(function(use)
     use { 'mhinz/vim-startify' } -- front page 
     use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
     use { 'DanilaMihailov/beacon.nvim' } -- show effect where cursor goes
-    use { 'navarasu/onedark.nvim' } -- theme
+    --use { 'navarasu/onedark.nvim' } -- one dark theme
+    use {'nyoom-engineering/oxocarbon.nvim'}
 
 end)
 

@@ -3,3 +3,4 @@ if status is-interactive
 end
 
 export PATH="$HOME/.cargo/bin:$PATH" # for rust lang
+export PATH="$PATH:/usr/local/go/bin"  # for go lang

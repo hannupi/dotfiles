@@ -13,7 +13,7 @@ require 'pluginconfigs.barbar'
 require 'pluginconfigs.lualine'
 require 'pluginconfigs.toggleterm'
 require 'pluginconfigs.nvim-autopairs'
-require 'pluginconfigs.colorscheme'
+require('oxocarbon')
 
 -- language improvements
 require 'pluginconfigs.cmp'
