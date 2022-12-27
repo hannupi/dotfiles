@@ -1,7 +1,5 @@
 return function(use)
-	use 'mhinz/vim-startify' -- front page 
-
-	--[[
+	--[[ better file explorer in case i need it
 	use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons', config = function()
 		require('nvim-tree').setup {
 			actions = {
@@ -13,3 +11,4 @@ return function(use)
 	end}
 	]]--
 end
+
