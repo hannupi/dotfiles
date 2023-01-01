@@ -1,81 +1,16 @@
-# Font configuration
 font:
-    # Normal (roman) font face
     normal:
-        # Font family
-        #
-        # Default:
-        #   - (macOS) Menlo
-        #   - (Linux/BSD) monospace
-        #   - (Windows) Consolas
         family: Hack Nerd Font
 
-        # The `style` can be specified to pick a specific face.
         style: Regular
-
-    # Bold font face
-    #bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Bold
-
-    # Italic font face
-    #italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Italic
-
-    # Bold italic font face
-    #bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
-
-    # Point size
     size: 14.0
-
-    # Offset is the extra space around each character. `offset.y` can be thought
-    # of as modifying the line spacing, and `offset.x` as modifying the letter
-    # spacing.
-    #offset:
-    #  x: 0
-    #  y: 0
-
-    # Glyph offset determines the locations of the glyphs within their cells with
-    # the default being at the bottom. Increasing `x` moves the glyph to the
-    # right, increasing `y` moves the glyph upward.
     glyph_offset:
         x: 0
         y: 0
-
-    # Thin stroke font rendering (macOS only)
-    #
-    # Thin strokes are suitable for retina displays, but for non-retina screens
-    # it is recommended to set `use_thin_strokes` to `false`.
-    #use_thin_strokes: true
-
-# If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
-
 colors:
     primary:
-        background: "#1E1E2E" # base
-        foreground: "#CDD6F4" # text
+        background: "#161616" # base
+        foreground: "#ffffff" # text
         # Bright and dim foreground colors
         dim_foreground: "#CDD6F4" # text
         bright_foreground: "#CDD6F4" # text
@@ -83,58 +18,33 @@ colors:
     # Cursor colors
     cursor:
         text: "#1E1E2E" # base
-        cursor: "#F5E0DC" # rosewater
+        cursor: "#d0d0d0" # rosewater
     vi_mode_cursor:
         text: "#1E1E2E" # base
-        cursor: "#B4BEFE" # lavender
+        cursor: "#d0d0d0" # lavender
 
-    # Search colors
-    search:
-        matches:
-            foreground: "#1E1E2E" # base
-            background: "#A6ADC8" # subtext0
-        focused_match:
-            foreground: "#1E1E2E" # base
-            background: "#A6E3A1" # green
-        footer_bar:
-            foreground: "#1E1E2E" # base
-            background: "#A6ADC8" # subtext0
-
-    # Keyboard regex hints
-    hints:
-        start:
-            foreground: "#1E1E2E" # base
-            background: "#F9E2AF" # yellow
-        end:
-            foreground: "#1E1E2E" # base
-            background: "#A6ADC8" # subtext0
-
-    # Selection colors
-    selection:
-        text: "#1E1E2E" # base
-        background: "#F5E0DC" # rosewater
 
     # Normal colors
     normal:
-        black: "#45475A" # surface1
-        red: "#F38BA8" # red
-        green: "#A6E3A1" # green
-        yellow: "#F9E2AF" # yellow
-        blue: "#89B4FA" # blue
-        magenta: "#F5C2E7" # pink
-        cyan: "#94E2D5" # teal
-        white: "#BAC2DE" # subtext1
+        black: "#161616" # surface1
+        red: "#33b1ff" # red
+        green: "#ff7eb6" # green
+        yellow: "#42be65" # yellow
+        blue: "#08bdba" # blue
+        magenta: "#82cfff" # pink
+        cyan: "#78a9ff" # teal
+        white: "#d0d0d0" # subtext1
 
     # Bright colors
     bright:
-        black: "#585B70" # surface2
-        red: "#F38BA8" # red
-        green: "#A6E3A1" # green
-        yellow: "#F9E2AF" # yellow
-        blue: "#89B4FA" # blue
-        magenta: "#F5C2E7" # pink
-        cyan: "#94E2D5" # teal
-        white: "#A6ADC8" # subtext0
+        black: "#525252" # surface2
+        red: "#33b1ff" # red
+        green: "#ff7eb6" # green
+        yellow: "#42be65" # yellow
+        blue: "#08bdba" # blue
+        magenta: "#82cfff" # pink
+        cyan: "#78a9ff" # teal
+        white: "#ffffff" # subtext0
 
     # Dim colors
     dim:
