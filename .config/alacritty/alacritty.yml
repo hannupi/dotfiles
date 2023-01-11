@@ -1,62 +1,42 @@
 font:
-    normal:
-        family: Hack Nerd Font
+  normal:
+    #family: Hack Nerd Font
 
-        style: Regular
+    style: Regular
     size: 14.0
     glyph_offset:
-        x: 0
-        y: 0
+      x: 0
+      y: 0
+
 colors:
-    primary:
-        background: "#161616" # base
-        foreground: "#ffffff" # text
-        # Bright and dim foreground colors
-        dim_foreground: "#CDD6F4" # text
-        bright_foreground: "#CDD6F4" # text
+  # Default colors
+  primary:
+    background: '#161616'
+    foreground: '#ffffff'
 
-    # Cursor colors
-    cursor:
-        text: "#1E1E2E" # base
-        cursor: "#d0d0d0" # rosewater
-    vi_mode_cursor:
-        text: "#1E1E2E" # base
-        cursor: "#d0d0d0" # lavender
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '#dde1e6'
+    cursor: '0xd8d8d8'
 
+  # Normal colors
+  normal:
+    black:   '#161616'
+    red:     '#33b1ff'
+    green:   '#ff7eb6'
+    yellow:  '#42be65'
+    blue:    '#08bdba'
+    magenta: '#82cfff'
+    cyan:    '#78a9ff'
+    white:   '#dde1e6'
 
-    # Normal colors
-    normal:
-        black: "#161616" # surface1
-        red: "#33b1ff" # red
-        green: "#ff7eb6" # green
-        yellow: "#42be65" # yellow
-        blue: "#08bdba" # blue
-        magenta: "#82cfff" # pink
-        cyan: "#78a9ff" # teal
-        white: "#d0d0d0" # subtext1
-
-    # Bright colors
-    bright:
-        black: "#525252" # surface2
-        red: "#33b1ff" # red
-        green: "#ff7eb6" # green
-        yellow: "#42be65" # yellow
-        blue: "#08bdba" # blue
-        magenta: "#82cfff" # pink
-        cyan: "#78a9ff" # teal
-        white: "#ffffff" # subtext0
-
-    # Dim colors
-    dim:
-        black: "#45475A" # surface1
-        red: "#F38BA8" # red
-        green: "#A6E3A1" # green
-        yellow: "#F9E2AF" # yellow
-        blue: "#89B4FA" # blue
-        magenta: "#F5C2E7" # pink
-        cyan: "#94E2D5" # teal
-        white: "#BAC2DE" # subtext1
-
-    indexed_colors:
-        - { index: 16, color: "#FAB387" }
-        - { index: 17, color: "#F5E0DC" }
+  # Bright colors
+  bright:
+    black:   '#525252'
+    red:     '#33b1ff'
+    green:   '#ff7eb6'
+    yellow:  '#42be65'
+    blue:    '#08bdba'
+    magenta: '#82cfff'
+    cyan:    '#78a9ff'
+    white:   '#ffffff'
