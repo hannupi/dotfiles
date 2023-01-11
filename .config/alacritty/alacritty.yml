@@ -1,12 +1,8 @@
 font:
   normal:
-    #family: Hack Nerd Font
-
+    family: Liberation Mono 
     style: Regular
-    size: 14.0
-    glyph_offset:
-      x: 0
-      y: 0
+  size: 13.0
 
 colors:
   # Default colors

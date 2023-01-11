@@ -4,6 +4,12 @@ i3-gaps on fedoraOS, alacritty terminal with fish shell
 
 ---
 
+stuff in use;
+i3, picom, polybar, rofi, fish, alacritty
+neovim as editor
+flameshot for screenshots
+
+---
 ## Installation steps
 
 ```
