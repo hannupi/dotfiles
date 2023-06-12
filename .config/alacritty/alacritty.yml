@@ -4,25 +4,25 @@ font:
     style: Regular
   size: 14.0
 
+window:
+  padding:
+    x: 6 
+    y: 6 
+
 colors:
   # Default colors
   primary:
     background: '#0b0b0c'
-    foreground: '#ffffff'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '#dde1e6'
-    cursor: '0xd8d8d8'
+    foreground: '#a7b4da'
 
   # Normal colors
   normal:
     black:   '#161616'
-    red:     '#33b1ff'
-    green:   '#ff7eb6'
+    red:     '#fb0492'
+    green:   '#4bb543'
     yellow:  '#42be65'
-    blue:    '#08bdba'
-    magenta: '#82cfff'
+    blue:    '#bb77ff'
+    magenta: '#f955e0'
     cyan:    '#78a9ff'
     white:   '#dde1e6'
 
@@ -30,7 +30,7 @@ colors:
   bright:
     black:   '#525252'
     red:     '#33b1ff'
-    green:   '#ff7eb6'
+    green:   '#bb77ff'
     yellow:  '#42be65'
     blue:    '#08bdba'
     magenta: '#82cfff'
