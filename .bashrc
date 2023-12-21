@@ -93,6 +93,13 @@ alias la='ls -A'
 alias l='ls -CF'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 alias e='~/nvim.appimage'
+alias us='setxkbmap us'
+alias en='setxkbmap us'
+alias fi='setxkbmap fi'
+alias brig=''brightnessctl set' 
+alias sd='systemctl poweroff' 
+alias rs='systemctl reboot' 
+alias wifi='nmcli d wifi'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
