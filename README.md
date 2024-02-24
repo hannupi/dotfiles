@@ -1,12 +1,10 @@
 i3-gaps on fedoraOS, alacritty terminal with fish shell
 
-![](image.png)
-
 ---
 
 stuff in use;
-i3, picom, polybar, rofi, fish, alacritty
-neovim as editor
+i3, picom, polybar, rofi, zsh, alacritty
+lazyvim as editor
 flameshot for screenshots
 
 ---
