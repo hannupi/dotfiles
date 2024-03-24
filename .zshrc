@@ -95,3 +95,5 @@ alias wifi='nmcli d wifi'
 unsetopt autocd
 
 export PATH=$PATH:/usr/local/go/bin
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
