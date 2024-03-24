@@ -1,4 +1,4 @@
-i3-gaps on fedoraOS, alacritty terminal with fish shell
+i3-gaps on fedora, alacritty terminal with zsh shell
 
 ---
 
@@ -33,7 +33,6 @@ config config --local status.showUntrackedFiles no
 ```
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME';echo ".cfg" >> .gitignore;git clone --bare git@github.com:dfthan/dotfiles.git $HOME/.cfg;alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ;config checkout;config config --local status.showUntrackedFiles no
-```
 ```
 
 To store possible old config files out of the way
