@@ -1,4 +1,5 @@
-i3-gaps on fedora, alacritty terminal with zsh shell
+i3-gaps on fedora, alacritty terminal with zsh 
+font consolas NF
 
 ---
 
