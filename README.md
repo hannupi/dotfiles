@@ -1,4 +1,4 @@
-i3-gaps on fedora, alacritty terminal with zsh 
+fedora with i3 gaps, alacritty terminal with zsh & ohmyzsh
 font consolas NF
 
 ---
@@ -18,7 +18,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 echo ".cfg" >> .gitignore
 ```
 ```
-git clone --bare git@github.com:dfthan/dotfiles.git $HOME/.cfg
+git clone --bare https://github.com/hannupi/dotfiles.git $HOME/.cfg
 ```
 ```
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -31,9 +31,9 @@ Hide unadded files for clarity
 ```
 config config --local status.showUntrackedFiles no
 ```
+Combined copypaste
 ```
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME';echo ".cfg" >> .gitignore;git clone --bare git@github.com:dfthan/dotfiles.git $HOME/.cfg;alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-;config checkout;config config --local status.showUntrackedFiles no
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME';echo ".cfg" >> .gitignore;git clone --bare https://github.com/hannupi/dotfiles.git  $HOME/.cfg;alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME';config checkout;config config --local status.showUntrackedFiles no
 ```
 
 To store possible old config files out of the way
