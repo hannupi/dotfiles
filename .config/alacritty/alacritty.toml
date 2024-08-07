@@ -1,0 +1,35 @@
+[colors.bright]
+black = "#525252"
+blue = "#08bdba"
+cyan = "#78a9ff"
+green = "#bb77ff"
+magenta = "#82cfff"
+red = "#33b1ff"
+white = "#ffffff"
+yellow = "#42be65"
+
+[colors.normal]
+black = "#161616"
+blue = "#bb77ff"
+cyan = "#78a9ff"
+green = "#4bb543"
+magenta = "#f955e0"
+red = "#fb0492"
+white = "#dde1e6"
+yellow = "#42be65"
+
+[colors.primary]
+background = "#0b0b0c"
+#foreground = "#a7b4da"
+
+[font]
+size = 14.0
+
+[font.normal]
+#family = "Literation Mono Nerd Font"
+family = "InconsolataGo Nerd Font Mono"
+style = "Regular"
+
+[window.padding]
+x = 6
+y = 6
