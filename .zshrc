@@ -83,7 +83,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
-alias e='~/nvim.appimage'
+alias e='/usr/bin/nvim'
 alias us='setxkbmap us'
 alias en='setxkbmap us'
 alias fin='setxkbmap fi'
@@ -94,9 +94,13 @@ alias wifi='nmcli d wifi'
 
 unsetopt autocd
 
-PATH="$HOME/.local/bin:$PATH"
-PATH="/usr/local/go/bin:$PATH"
+PATH="$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH"
 export PATH
+
+if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
+    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
+fi
+
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
 
