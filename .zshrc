@@ -95,7 +95,7 @@ alias wifi='nmcli d wifi'
 
 unsetopt autocd
 
-PATH="$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH"
+PATH="$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$HOME/.cargo/env:$PATH"
 export PATH
 
 if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
