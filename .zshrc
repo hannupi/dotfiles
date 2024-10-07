@@ -93,6 +93,8 @@ alias sd='systemctl poweroff'
 alias rs='systemctl reboot'
 alias wifi='nmcli d wifi'
 
+set -o vi
+
 unsetopt autocd
 
 PATH="$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$HOME/.cargo/env:$PATH"
