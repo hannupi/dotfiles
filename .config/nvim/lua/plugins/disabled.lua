@@ -6,4 +6,5 @@ return {
 	{ "zbirenbaum/copilot.lua", enabled = false },
 	{ "rcarriga/nvim-notify", enabled = false },
 	{ "nvim-lualine/lualine.nvim", enabled = false },
+	{ "hrsh7th/nvim-cmp", enabled = false },
 }
