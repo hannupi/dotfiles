@@ -1,41 +1,37 @@
-[colors.bright]
-#black = "#525252"
-#blue = "#08bdba"
-#cyan = "#78a9ff"
-#green = "#bb77ff"
-#magenta = "#82cfff"
-#red = "#33b1ff"
-#white = "#ffffff"
-#yellow = "#42be65"
-
 [colors.normal]
-black = "#161616"
-blue = "#bb77ff"
-cyan = "#78a9ff"
-green = "#4bb543"
-magenta = "#f955e0"
-red = "#fb0492"
-white = "#dde1e6"
-yellow = "#42be65"
+black   = '#110f18'
+red     = '#ff6767'
+green = "#bb77ff"
+yellow  = '#ffca85'
+blue    = '#a277ff'
+magenta = '#a277ff'
+cyan    = '#61ffca'
+white   = '#edecee'
+
+# Bright colors
+[colors.bright]
+black   = '#4d4d4d'
+red     = '#ff6767'
+green   = '#61ffca'
+yellow  = '#ffca85'
+blue    = '#a277ff'
+magenta = '#a277ff'
+cyan    = '#61ffca'
+white   = '#edecee'
+
+[colors.selection]
+text       = 'CellForeground'
+background = '#29263c'
 
 [colors.primary]
 background = "#0b0b0c"
 #foreground = "#a7b4da"
 
+
 [font]
-size = 15.0
+size = 13.5
 
 [font.normal]
 #family = "Literation Mono Nerd Font"
 family = "InconsolataGo Nerd Font Mono"
 style = "Regular"
-
-[window.padding]
-x = 6
-y = 6
-
-[env]
-TERM                  = "xterm-256color"
-
-[window]
-decorations = "Transparent"
