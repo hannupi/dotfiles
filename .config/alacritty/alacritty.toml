@@ -27,6 +27,9 @@ background = '#29263c'
 background = "#0b0b0c"
 #foreground = "#a7b4da"
 
+[window]
+dimensions = { columns = 160, lines = 40 }
+
 
 [font]
 size = 13.5
