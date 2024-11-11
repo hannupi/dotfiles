@@ -29,6 +29,7 @@ background = "#0b0b0c"
 
 [window]
 dimensions = { columns = 160, lines = 40 }
+title = ""
 
 
 [font]
@@ -38,3 +39,6 @@ size = 13.5
 #family = "Literation Mono Nerd Font"
 family = "InconsolataGo Nerd Font Mono"
 style = "Regular"
+
+[cursor]
+style = { shape = "Block", blinking = "Never" }
