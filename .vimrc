@@ -20,3 +20,6 @@ set splitbelow                  " create split below when doing horizontal split
 set splitright                  " create split on right when doing a vertical split
 set tags=tags                   " CTags file
 set noswapfile
+
+nnoremap ; :
+nnoremap , ;
