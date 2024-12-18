@@ -6,4 +6,11 @@ return {
 	{ "zbirenbaum/copilot.lua", enabled = false },
 	{ "rcarriga/nvim-notify", enabled = false },
 	{ "nvim-lualine/lualine.nvim", enabled = false },
+
+	{
+		"folke/snacks.nvim",
+		opts = {
+			notifier = { enabled = false },
+		},
+	},
 }
