@@ -11,6 +11,7 @@ return {
 		"folke/snacks.nvim",
 		opts = {
 			notifier = { enabled = false },
+			scroll = { enabled = false },
 		},
 	},
 }
