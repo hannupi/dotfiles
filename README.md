@@ -3,11 +3,6 @@ font consolas NF // inconsolatago NF
 
 ## Installation steps
 
-shell installer script does these
-
-```
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-```
 ```
 echo ".cfg" >> .gitignore
 ```
