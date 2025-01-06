@@ -1,24 +1,9 @@
-fedora with i3 gaps, alacritty terminal with zsh & ohmyzsh
-font consolas NF // inconsolatago NF
+Fedora with gnome, alacritty with zsh & ohmyzsh. Editor lazyvim/nvim
 
 ## Installation steps
 
 ```
-echo ".cfg" >> .gitignore
-```
-```
-git clone --bare https://github.com/hannupi/dotfiles.git $HOME/.cfg
-```
-```
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-```
-```
-config checkout
-```
-
-Hide unadded files for clarity
-```
-config config --local status.showUntrackedFiles no
+git clone --bare https://github.com/hannupi/dotfiles.git $HOME/.cfg;alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME';config checkout;config config --local status.showUntrackedFiles no
 ```
 
 To store possible old config files out of the way
