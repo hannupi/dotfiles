@@ -3,7 +3,7 @@ Fedora with gnome, alacritty with zsh & ohmyzsh. Editor lazyvim/nvim
 ## Installation steps
 
 ```
-git clone --bare git@github.com:hannupi/dotfiles.git $HOME/.cfg;alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME';config checkout;config config --local status.showUntrackedFiles no
+git clone --bare git@github.com:hannupi/dotfiles.git $HOME/.cfg && rm .bashrc && alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' && config checkout && config config --local status.showUntrackedFiles no
 ```
 
 To store possible old config files out of the way

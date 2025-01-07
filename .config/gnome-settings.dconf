@@ -177,10 +177,6 @@ show-whose-processes='user'
 col-26-visible=false
 col-26-width=0
 
-[org/gnome/login-screen]
-enable-fingerprint-authentication=true
-enable-smartcard-authentication=false
-
 [org/gnome/mutter]
 center-new-windows=true
 workspaces-only-on-primary=true
