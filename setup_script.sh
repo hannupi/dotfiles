@@ -11,7 +11,7 @@ KEYD_REPO="https://github.com/rvaiya/keyd"
 
 echo "packages"
 sudo dnf copr enable atim/lazygit -y
-sudo dnf install -y curl git lazygit fd-find neovim tmux fzf ripgrep go vim alacritty zsh htop yt-dlp qbittorrent vlc
+sudo dnf install -y curl wget git lazygit fd-find neovim tmux fzf ripgrep go vim alacritty zsh htop yt-dlp qbittorrent vlc ffmpeg
 
 echo "font"
 wget -q "$FONT_URL" -O "$FONT_FILE"

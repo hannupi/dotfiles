@@ -93,6 +93,14 @@ alias sd='systemctl poweroff'
 alias rs='systemctl reboot'
 alias wifi='nmcli d wifi'
 
+todo() {
+    clear
+    cal -3 -m 
+    cat "$HOME/todo.md"
+}
+alias td='todo'
+alias te="vim $HOME/todo.md"
+
 unsetopt autocd
 
 if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
