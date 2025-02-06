@@ -55,6 +55,9 @@ if [[ ! -d keyd ]]; then
 	make && sudo make install
 	sudo systemctl enable --now keyd
 	cd ..
+	if [[ ! -f "/etc/keyd/default.conf" ]]; then
+		sudo ln -s ~/.config/keyd/default.conf /etc/keyd/default.conf
+	fi
 fi
 
 if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
