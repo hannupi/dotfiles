@@ -1,7 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-export EDITOR=vim
 FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/InconsolataGo.zip"
 FONT_FILE="InconsolataGo.zip"
 GNOME_SETTINGS="./.config/gnome-settings.dconf"
@@ -58,6 +57,12 @@ if [[ ! -d keyd ]]; then
 	if [[ ! -f "/etc/keyd/default.conf" ]]; then
 		sudo ln -s ~/.config/keyd/default.conf /etc/keyd/default.conf
 	fi
+fi
+
+if [[ ! -f "/usr/bin/mullvad"]]; then
+	echo "mullvad"
+	sudo dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
+	sudo dnf install mullvad-vpn -y
 fi
 
 if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
