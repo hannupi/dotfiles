@@ -8,7 +8,6 @@ magenta = '#a277ff'
 cyan    = '#61ffca'
 white   = '#edecee'
 
-# Bright colors
 [colors.bright]
 black   = '#4d4d4d'
 red     = '#ff6767'
@@ -33,7 +32,7 @@ title = ""
 
 
 [font]
-size = 13.5
+size = 13
 
 [font.normal]
 #family = "Literation Mono Nerd Font"
