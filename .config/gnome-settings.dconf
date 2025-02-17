@@ -153,6 +153,7 @@ switch-to-workspace-left=['<Shift><Alt>a']
 switch-to-workspace-right=['<Shift><Alt>d']
 switch-windows=['<Alt>Tab']
 switch-windows-backward=['<Shift><Alt>Tab']
+toggle-fullscreen=['<Shift><Alt>Return']
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -210,11 +211,10 @@ night-light-temperature=uint32 3678
 calculator=['<Shift><Alt>c']
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
 home=['<Shift><Alt>s']
-search=['<Shift><Alt>f']
-www=['<Shift><Alt>t']
+www=['<Shift><Alt>f']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Shift><Alt>Return'
+binding='<Shift><Alt>t'
 command='alacritty'
 name='terminal'
 
