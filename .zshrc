@@ -1,10 +1,25 @@
+todo() {
+    clear
+    cal -3 -m 
+    cat "$HOME/todo.md"
+}
+
+s() {
+  last_cmd=$(fc -ln -1)
+  if [[ -n $last_cmd ]]; then
+    sudo $last_cmd
+  else
+    echo "No previous command found"
+  fi
+}
+
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
 
 ZSH_THEME=""
 PS1='${debian_chroot:+($debian_chroot)}%F{green}%n@%m%f:%F{blue}%~%f$ '
+
 
 zstyle ':omz:update' mode auto
 
@@ -17,6 +32,9 @@ plugins=(
   git
   zsh-autosuggestions
 )
+
+# this sourcing must be done after plugins to avoid race conditions
+source $ZSH/oh-my-zsh.sh
 
 alias ll='ls -alF'
 alias la='ls -A'
@@ -35,11 +53,6 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
-todo() {
-    clear
-    cal -3 -m 
-    cat "$HOME/todo.md"
-}
 alias td='todo'
 alias te="vim $HOME/todo.md"
 
