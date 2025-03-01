@@ -12,6 +12,7 @@ return {
 		opts = {
 			notifier = { enabled = false },
 			scroll = { enabled = false },
+			explorer = { enabled = false },
 		},
 	},
 }
