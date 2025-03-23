@@ -1,21 +1,11 @@
 [colors.normal]
 black   = '#110f18'
 red     = '#ff6767'
-green = "#bb77ff"
+#green   = "#bb77ff"
 yellow  = '#ffca85'
-blue    = '#a277ff'
+#blue    = '#a277ff'
 magenta = '#a277ff'
-cyan    = '#61ffca'
-white   = '#edecee'
-
-[colors.bright]
-black   = '#4d4d4d'
-red     = '#ff6767'
-green   = '#61ffca'
-yellow  = '#ffca85'
-blue    = '#a277ff'
-magenta = '#a277ff'
-cyan    = '#61ffca'
+#cyan    = '#61ffca'
 white   = '#edecee'
 
 [colors.selection]
@@ -29,7 +19,6 @@ background = "#0b0b0c"
 [window]
 dimensions = { columns = 160, lines = 40 }
 title = ""
-
 
 [font]
 size = 13
