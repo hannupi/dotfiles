@@ -23,7 +23,7 @@ PS1='${debian_chroot:+($debian_chroot)}%F{green}%n@%m%f:%F{blue}%~%f$ '
 
 zstyle ':omz:update' mode auto
 
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
