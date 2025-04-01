@@ -147,6 +147,7 @@ col-26-width=0
 
 [org/gnome/mutter]
 center-new-windows=true
+dynamic-workspaces=false
 workspaces-only-on-primary=true
 
 [org/gnome/nautilus/preferences]
