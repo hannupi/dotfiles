@@ -10,7 +10,8 @@ KEYD_REPO="https://github.com/rvaiya/keyd"
 
 echo "packages"
 sudo dnf copr enable atim/lazygit -y
-sudo dnf install -y curl wget git less lazygit fd-find neovim tmux fzf ripgrep go vim alacritty zsh htop yt-dlp qbittorrent vlc ffmpeg
+sudo dnf copr enable pgdev/ghostty
+sudo dnf install -y curl wget git less lazygit fd-find neovim tmux fzf ripgrep go vim ghostty alacritty zsh htop yt-dlp qbittorrent vlc ffmpeg
 
 if [[ -f "$GNOME_SETTINGS" ]]; then
 	echo "Applying GNOME settings..."
