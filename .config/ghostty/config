@@ -7,7 +7,8 @@ title = ""
 gtk-titlebar = false
 gtk-tabs-location = hidden
 mouse-hide-while-typing = true
+font-feature = -calt
 
-background-opacity = 0.95
+#background-opacity = 0.95
 
 keybind = ctrl+enter=unbind
