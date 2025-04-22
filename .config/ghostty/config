@@ -8,6 +8,10 @@ gtk-titlebar = false
 gtk-tabs-location = hidden
 mouse-hide-while-typing = true
 font-feature = -calt
+clipboard-paste-protection = false
+clipboard-trim-trailing-spaces = true
+window-width = 140
+window-height = 40
 
 #background-opacity = 0.95
 
