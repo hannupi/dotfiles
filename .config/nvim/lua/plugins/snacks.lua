@@ -38,4 +38,21 @@ return {
 		notifier = { enabled = false },
 		scroll = { enabled = false },
 	},
+
+	keys = {
+		{
+			"<leader><space>",
+			function()
+				Snacks.picker.files({ filter = { cwd = true } })
+			end,
+			desc = "find files cwd",
+		},
+		{
+			"<leader>/",
+			function()
+				Snacks.picker.grep()
+			end,
+			desc = "grep cwd",
+		},
+	},
 }
