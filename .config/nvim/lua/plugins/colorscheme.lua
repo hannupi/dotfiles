@@ -1,8 +1,12 @@
 return {
 	{
-		"hannupi/c1-theme.vim",
+		"hannupi/oldworld.nvim",
 		config = function()
-			vim.cmd.colorscheme("c1-theme")
+			require("oldworld").setup({
+				variant = "oled",
+				terminal_colors = true,
+			})
+			vim.cmd.colorscheme("oldworld")
 		end,
 	},
 	{
