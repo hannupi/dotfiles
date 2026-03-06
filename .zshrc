@@ -18,15 +18,14 @@ export EDITOR="$VISUAL"
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME=""
-PS1='${debian_chroot:+($debian_chroot)}%F{green}%n@%m%f:%F{blue}%~%f$ '
-
+PS1='${debian_chroot:+($debian_chroot)}%F{green}%n%f $ '
 
 zstyle ':omz:update' mode auto
 
 #ENABLE_CORRECTION="true"
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
 
 plugins=(
   git
@@ -48,6 +47,7 @@ alias brig='brightnessctl set'
 alias sd='systemctl poweroff'
 alias rs='systemctl reboot'
 alias wifi='nmcli d wifi'
+alias lg='lazygit'
 
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
@@ -65,3 +65,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+. "$HOME/.local/bin/env"
+export PATH=$PATH:/usr/local/go/bin
