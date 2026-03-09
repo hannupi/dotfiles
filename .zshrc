@@ -18,7 +18,8 @@ export EDITOR="$VISUAL"
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME=""
-PS1='${debian_chroot:+($debian_chroot)}%F{green}%n%f $ '
+#PS1='${debian_chroot:+($debian_chroot)}%F{green}%n%f %F{blue}%~%f $ '
+PS1='%F{green}%~%f $ '
 
 zstyle ':omz:update' mode auto
 
