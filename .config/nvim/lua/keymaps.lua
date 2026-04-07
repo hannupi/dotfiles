@@ -8,6 +8,8 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>', { desc = "clear search" })
 
+vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>')
+
 -- fzf
 vim.keymap.set("n", "<leader><space>", "<cmd>FzfLua files<CR>", { desc = "Find Files (Project Root)" })
 vim.keymap.set("n", "<leader>/", "<cmd>FzfLua live_grep<CR>", { desc = "Live Grep (Project Root)" })
