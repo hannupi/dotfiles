@@ -14,6 +14,8 @@ clipboard-trim-trailing-spaces = true
 window-width = 200
 window-height = 50
 
+app-notifications = no-clipboard-copy
+
 #background-opacity = 0.95
 
 keybind = ctrl+enter=unbind
